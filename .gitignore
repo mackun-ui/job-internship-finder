@@ -1,0 +1,8 @@
+# node and env
+node_modules/
+.env
+config.js
+
+# OS / editor
+.DS_Store
+.vscode/
