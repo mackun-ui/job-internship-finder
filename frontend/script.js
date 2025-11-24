@@ -23,7 +23,7 @@ async function searchJobs() {
     resultsDiv.innerHTML = "";
 
     try {
-        const response = await fetch(
+        const res = await fetch(
             `https://jsearch.p.rapidapi.com/search?query=${query}&num_pages=1&country=${location}`,
             {
                 method: "GET",
