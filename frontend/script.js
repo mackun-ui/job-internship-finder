@@ -23,7 +23,17 @@ async function searchJobs() {
     resultsDiv.innerHTML = "";
 
     try {
-        const res = await fetch(`/api/search?query=${encodeURIComponent(query)}&location=${encodeURIComponent(location)}`);
+        const response = await fetch(
+            `https://jsearch.p.rapidapi.com/search?query=${query}&num_pages=1&country=${location}`,
+            {
+                method: "GET",
+                headers: {
+                    "X-RapidAPI-Key": "4e23ef14admsha6b305f7b721d4fp11e3dbjsn7cd1d4d84af2",
+                    "X-RapidAPI-Host": "jsearch.p.rapidapi.com"
+                }
+            }
+    );
+
         const data = await res.json();
 
         if (!data || !data.data || data.data.length === 0) {
