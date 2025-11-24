@@ -24,7 +24,7 @@ async function searchJobs() {
 
     try {
         const res = await fetch(
-            `https://jsearch.p.rapidapi.com/search?query=${query}&num_pages=1&country=${location}`,
+            `https://jsearch.p.rapidapi.com/search?query=${encodeURIComponent(query)}&num_pages=1&country=${encodeURIComponent(location)}`,
             {
                 method: "GET",
                 headers: {
