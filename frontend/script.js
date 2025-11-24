@@ -32,7 +32,7 @@ async function searchJobs() {
                     "X-RapidAPI-Host": "jsearch.p.rapidapi.com"
                 }
             }
-    );
+        );
 
         const data = await res.json();
 
