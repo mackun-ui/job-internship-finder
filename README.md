@@ -44,7 +44,7 @@ This project was created to provide real value by helping users save time and fi
 
 ## Demo Video
 Watch the demo video here:
-[Insert Demo Video Link]
+https://youtu.be/0WE_HVO82iE
 
 The video demonstrates:
 - Running the application locally
